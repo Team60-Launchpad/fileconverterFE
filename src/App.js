@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import Button from './components/Button';
 import Email from './components/Email';
-import File_Select from './components/fileSelect';
+import FileSelect from './components/fileSelect';
 
 class App extends Component {
   state = {
@@ -12,7 +12,7 @@ class App extends Component {
     console.log(this.state.emailAddress)
     return (
       <div className="App">
-        < File_Select />
+        < FileSelect />
         < Email updateInputs={this.updateInputs}/>
         < Button />
       </div>

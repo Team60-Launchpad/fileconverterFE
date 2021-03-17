@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 
-export default class fileSelect extends Component {
+export default class FileSelect extends Component {
 	constructor(props) {
     super(props);
 		this.handleSubmit = this.handleSubmit.bind(this);
@@ -68,10 +68,10 @@ console.log(this.state.files)
 					<div id="fileCard" 	key={file}>
 						<div id='fileName'>{file}</div>
 						<div id='fileSize'>{this.state.fileSize[id]}</div>
-						<img src="/media/tick.png" id='tick'
+						<img src="/media/tick.png" id='tick' alt=''
 							// onClick={() => this.handleFileRemove(id)}
 						/>
-						<img className='bin' src="/media/bin.png" title='remove file' 	id={id} onClick={() => this.handleFileRemove(id)}/>
+						<img className='bin' src="/media/bin.png"  alt='' title='remove file' 	id={id} onClick={() => this.handleFileRemove(id)}/>
 						
 					</div>)
 				
