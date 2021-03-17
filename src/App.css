@@ -6,9 +6,14 @@
     margin-right: auto;
     background-color: lightgrey;
     padding: 10px;
+    font-family:  Sans-serif;
+    
     
 }
 
+#title {
+  font-weight: bold;
+}
 /* .file-Upload {
   display: inline-flex;
   align-items: center;

@@ -48,7 +48,7 @@ console.log(this.state.files)
 
 		return (
 			<div className='file-Upload'>
-				<p>Add your IFC file</p>
+				<p id='title'>Add your IFC file</p>
 				<input className='file-upload__input' type='file' name='myFile[]' id='myFile' multiple></input>
 			
 <button id='fileUploadButton'  type='button' onClick={this.handleSubmit}>+</button>
