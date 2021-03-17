@@ -1,25 +1,26 @@
-import logo from './logo.svg';
+import React, { Component } from 'react';
 import './App.css';
+import Button from './components/Button';
+import Email from './components/Email';
+import File_Select from './components/File_Select';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+  state = {
+		emailAddress: '',
+	};
+  render() {
+    console.log(this.state.emailAddress)
+    return (
+      <div className="App">
+        < File_Select />
+        < Email updateInputs={this.updateInputs}/>
+        < Button />
+      </div>
+    );
+  }
+  updateInputs = (event) => {
+    this.setState({ emailAddress: event.target.value })
+}
 }
 
 export default App;
