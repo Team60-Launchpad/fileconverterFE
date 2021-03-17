@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 
-export default class File_Select extends Component {
+export default class fileSelect extends Component {
 	constructor(props) {
     super(props);
 		this.handleSubmit = this.handleSubmit.bind(this);
