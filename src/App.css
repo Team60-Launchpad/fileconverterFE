@@ -58,11 +58,11 @@
 #fileCard {
   display: contents;
   display: grid;
-	grid-template-columns: 90% 10%;
+	grid-template-columns: 10% 80% 10%;
 	grid-template-rows: 50% 50%;
 	border: 1px solid;
 	justify-content: right;
-	grid-template-areas: "fileName bin" "fileSize tick";
+	grid-template-areas: "tick fileName bin" "tick fileSize bin";
   padding: 10px;
   margin-right: 30px;
   margin-left: 30px;
@@ -83,10 +83,8 @@
   position:relative;
   width: 25px;
   transition: 0.3s;
-  opacity: 50%;
-  height:auto;
-  display:block;
-  z-index:999;
+  opacity: 70%;
+
 }
 
 #fileName {
