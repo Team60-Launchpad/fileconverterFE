@@ -78,12 +78,15 @@
 .bin {
   width: 20px;
   grid-area: bin;
+  -webkit-opacity: 0.5;
+-moz-opacity: 0.5;
+opacity: 0.5;
 }
 .bin:hover {
   position:relative;
   width: 25px;
   transition: 0.3s;
-  opacity: 70%;
+  opacity: 100%;
 
 }
 
@@ -146,4 +149,8 @@
         -moz-filter: brightness(130%);
         -o-filter: brightness(130%);
         -ms-filter: brightness(130%);
+}
+
+#demoButton {
+margin-bottom: 30px;
 }
