@@ -64,12 +64,12 @@ console.log(this.state.files)
 			// 	 label.textContent = file || defaultLabelText;
 			// 	label.title = label.textContent;
 				console.log(this.state.files, this.state.fileSize, id)
+				
 				return (
 					<div id="fileCard" 	key={file}>
 						<div id='fileName'>{file}</div>
 						<div id='fileSize'>{this.state.fileSize[id]}</div>
 						<img src="/media/tick.png" id='tick' alt=''
-							// onClick={() => this.handleFileRemove(id)}
 						/>
 						<img className='bin' src="/media/bin.png"  alt='' title='remove file' 	id={id} onClick={() => this.handleFileRemove(id)}/>
 						

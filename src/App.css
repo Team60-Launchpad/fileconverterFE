@@ -78,15 +78,13 @@
 .bin {
   width: 20px;
   grid-area: bin;
-  -webkit-opacity: 0.5;
--moz-opacity: 0.5;
-opacity: 0.5;
+
 }
 .bin:hover {
   position:relative;
   width: 25px;
   transition: 0.3s;
-  opacity: 100%;
+
 
 }
 
