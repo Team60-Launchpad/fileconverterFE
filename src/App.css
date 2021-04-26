@@ -37,6 +37,16 @@
   cursor: pointer;
 }
 
+#fileUploadButton:hover {
+  transition: 0.3s;
+  border: 2px solid black;
+        filter: brightness(130%);
+        -webkit-filter: brightness(130%);
+        -moz-filter: brightness(130%);
+        -o-filter: brightness(130%);
+        -ms-filter: brightness(130%);
+} 
+
 /* #file-upload__label {
   max-width: 250px;
   font-size: 0.95em;
@@ -69,6 +79,16 @@
   width: 20px;
   grid-area: bin;
 }
+.bin:hover {
+  position:relative;
+  width: 25px;
+  transition: 0.3s;
+  opacity: 50%;
+  height:auto;
+  display:block;
+  z-index:999;
+}
+
 #fileName {
   grid-area: fileName;
   text-align: left;
@@ -114,9 +134,18 @@
   border: 2px solid #00745d;
   color: #ffffff;
   font-size: 15px;
-  padding: 10px;
-  /* width: 60px;
-   height: 60px; */
+  padding: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
   font-weight: bold;
   cursor: pointer;
+}
+#button:hover {
+  transition: 0.3s;
+  border: 2px solid black;
+        filter: brightness(130%);
+        -webkit-filter: brightness(130%);
+        -moz-filter: brightness(130%);
+        -o-filter: brightness(130%);
+        -ms-filter: brightness(130%);
 }

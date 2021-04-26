@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import Button from './components/Button';
+import DemoButton from './components/DemoButton';
 import Email from './components/Email';
 import FileSelect from './components/fileSelect';
 
@@ -15,6 +16,7 @@ class App extends Component {
         < FileSelect />
         < Email updateInputs={this.updateInputs}/>
         < Button />
+        < DemoButton />
       </div>
     );
   }
