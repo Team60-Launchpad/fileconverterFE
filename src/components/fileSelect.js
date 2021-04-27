@@ -16,6 +16,9 @@ export default class FileSelect extends Component {
 		console.log(id, fileCheck, this.state.files, fileSizeCheck, this.state.fileSize);
 		this.setState({ files: this.state.files, fileSize: this.state.fileSize})
 	}
+
+
+
 	handleSubmit(event) {
 		const hidden = document.getElementById('myFile')
 		hidden.addEventListener("click", function() {
@@ -65,11 +68,14 @@ console.log(this.state.files)
 			// 	label.title = label.textContent;
 				console.log(this.state.files, this.state.fileSize, id)
 				
+				//then return '"/media/tick.png"
+				//else return 'cross'
+					
 				return (
 					<div id="fileCard" 	key={file}>
 						<div id='fileName'>{file}</div>
 						<div id='fileSize'>{this.state.fileSize[id]}</div>
-						<img src="/media/tick.png" id='tick' alt=''
+						<img className='tick' src="/media/tick.png" id='tick' alt=''
 						/>
 						<img className='bin' src="/media/bin.png"  alt='' title='remove file' 	id={id} onClick={() => this.handleFileRemove(id)}/>
 						
@@ -79,4 +85,5 @@ console.log(this.state.files)
 			</div>
 		);
 	}
+	
 }
