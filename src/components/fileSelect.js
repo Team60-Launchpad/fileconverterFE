@@ -66,22 +66,26 @@ console.log(this.state.files)
 			// label.title = defaultLabelText;
 			// 	 label.textContent = file || defaultLabelText;
 			// 	label.title = label.textContent;
-				console.log(this.state.files, this.state.fileSize, id)
+				// 	const fileTypes = ['xlsx']
+				// console.log(this.state.files, this.state.fileSize, this.state.files[id])
+					let picSrc = ''
+					if (this.state.files[id].indexOf('xlsx') !== -1) {
+						// console.log('xlsx confirmed')
+						picSrc = "/media/tick.png"
 				
-				//then return '"/media/tick.png"
-				//else return 'cross'
+			}
 					
 				return (
 					<div id="fileCard" 	key={file}>
 						<div id='fileName'>{file}</div>
 						<div id='fileSize'>{this.state.fileSize[id]}</div>
-						<img className='tick' src="/media/tick.png" id='tick' alt=''
+						<img className='tick' src={picSrc} id='tick' alt=''
 						/>
 						<img className='bin' src="/media/bin.png"  alt='' title='remove file' 	id={id} onClick={() => this.handleFileRemove(id)}/>
 						
 					</div>)
 				
-			})}</div>
+				})}</div>
 			</div>
 		);
 	}
