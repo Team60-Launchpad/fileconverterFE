@@ -71,7 +71,7 @@ console.log(this.state.files)
 					let picSrc = ''
 					if (this.state.files[id].indexOf('xlsx') !== -1) {
 						// console.log('xlsx confirmed')
-						picSrc = "/media/tick.png"
+						picSrc = "/media/whitetick.png"
 				
 			}
 					
@@ -81,7 +81,7 @@ console.log(this.state.files)
 						<div id='fileSize'>{this.state.fileSize[id]}</div>
 						<img className='tick' src={picSrc} id='tick' alt=''
 						/>
-						<img className='bin' src="/media/bin.png"  alt='' title='remove file' 	id={id} onClick={() => this.handleFileRemove(id)}/>
+						<img className='bin' src="/media/whitebin.png"  alt='' title='remove file' 	id={id} onClick={() => this.handleFileRemove(id)}/>
 						
 					</div>)
 				

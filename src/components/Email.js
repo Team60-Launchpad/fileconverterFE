@@ -11,7 +11,8 @@ const Email = ({updateInputs}) => {
             onChange={updateInputs}
             type="text"
             placeholder="user@companyname.com"
-            id="emailPlace"
+          id="emailPlace"
+          autocomplete="off"
           />
         
           
