@@ -4,7 +4,7 @@
   max-width: 400px;
   margin-left: auto;
     margin-right: auto;
-    background-color: rgb(23, 22, 22);
+    background-color: rgb(0, 0, 0);
     padding: 10px;
     font-family:  Sans-serif;
     
@@ -158,8 +158,26 @@
 
 #demoButton {
 margin-bottom: 30px;
+background: #0091c4;
+  border: 2px solid #004966;
+  color: #ffffff;
+  font-size: 15px;
+  padding: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-weight: bold;
+  cursor: pointer;
 }
 
+#demoButton:hover {
+  transition: 0.3s;
+  border: 2px solid white;
+        filter: brightness(130%);
+        -webkit-filter: brightness(130%);
+        -moz-filter: brightness(130%);
+        -o-filter: brightness(130%);
+        -ms-filter: brightness(130%);
+}
 #invisible {
   padding: 10px;
   opacity: 0;
